@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="fontawesome.css">
     <link rel="stylesheet" href="templatemo-572-designer.css">
     <link rel="stylesheet" href="owl.css">
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href=animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -26,6 +26,19 @@ TemplateMo 572 Designer
 https://templatemo.com/tm-572-designer
 
 -->
+<style>
+  .whatsapp-button-wrapper {
+    width: 100%;
+  }
+  
+  .whatsapp-button-wrapper .main-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+</style>
   </head>
 
 <body>
@@ -207,7 +220,7 @@ https://templatemo.com/tm-572-designer
       <div class="container">
           <div class="row">
               <div class="col-lg-6 left-form">
-                  <form id="contact" action="" method="post">
+                  <form id="contact" onsubmit="return openWhatsApp(event)">
                       <div class="row">
                           <div class="col-lg-12">
                               <div class="section-heading">
@@ -260,7 +273,14 @@ https://templatemo.com/tm-572-designer
               </div>
             </form>
          
-         
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="col-lg-6 right-map">
+                  <div id="map">
+                  
+                    <!-- You can easily copy and paste your own map point from Google Maps -> Share -> Embed a map -->
                       
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth" width="100%" height="542px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
                   </div>
@@ -275,7 +295,7 @@ https://templatemo.com/tm-572-designer
           <div class="row">
               <div class="col-lg-4">
                   <div class="about-widget">
-                      <img src="footer-logo.png" alt="designer template by TemplateMo">
+                      <img src="assets/images/footer-logo.png" alt="designer template by TemplateMo">
                       <p></p>
                   </div>
               </div>
@@ -364,7 +384,7 @@ https://templatemo.com/tm-572-designer
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="jquery.min.js"></script>
-  <script src=bootstrap.min.js"></script>
+  <script src="bootstrap.min.js"></script>
 
   <script src="isotope.min.js"></script>
   <script src="owl-carousel.js"></script>
@@ -382,7 +402,6 @@ https://templatemo.com/tm-572-designer
         return false;
     });
   </script>
- </script>
   <script>
 function openWhatsApp(event) {
     event.preventDefault();
@@ -419,8 +438,3 @@ Message: ${message}`;
 
 </body>
 </html>
-
-
-
-
-
