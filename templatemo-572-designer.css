@@ -325,7 +325,7 @@ button:focus:not(:focus-visible) {
 
 .main-banner {
   background-color: #333;
-  background-image: url(banner-bg.jpg);
+  background-image: url(..banner-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -860,7 +860,7 @@ footer .sub-footer a.scroll-to-top:hover {
 
 .page-banner {
   background-color: #333;
-  background-image: url(../images/page-banner-bg.jpg);
+  background-image: url(..banner-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1564,3 +1564,4 @@ section.contact-us-page .right-info ul li span {
 }
 
 /*# sourceMappingURL=style.css.map */
+
